@@ -13,11 +13,9 @@ public class Application {
         director.setBuilder(planeBuilder);
         director.constructPlane();
         Plane plane = planeBuilder.getPlane();
-        plane.setWeapon("");
         System.out.println(plane);
         director.constructInterceptor();
         Plane interceptor = planeBuilder.getPlane();
-        interceptor.setWeapon("missile");
         System.out.println(interceptor);
 
     }

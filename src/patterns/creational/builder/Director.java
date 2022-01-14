@@ -36,6 +36,8 @@ public class Director {
         builder.setName("hurricane");
         builder.setWheel(3);
         builder.setSpeedMax(5000);
+        Plane interceptor = ((PlaneBuilder)builder).getPlane();
+        interceptor.setWeapon("missile");
     }
 
 }
