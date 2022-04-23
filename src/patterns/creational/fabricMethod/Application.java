@@ -3,15 +3,15 @@ package patterns.creational.fabricMethod;
 import java.time.LocalTime;
 
 public class Application {
-    private static createProgram createProgram;
+    private static CreateProgram createProgram;
     public static void main(String[] args) {
         if ((LocalTime.now().getSecond() % 2) > 0) {
-            createProgram = new createCppProgram();
+            createProgram = new CreateCppProgram();
         } else {
-            createProgram = new createJavaProgram();
+            createProgram = new CreateJavaProgram();
         }
 
-        Developer code = createProgram.getDeveloper();
-        code.code();
+        Developer developer = createProgram.getDeveloper();
+        developer.code();
     }
 }

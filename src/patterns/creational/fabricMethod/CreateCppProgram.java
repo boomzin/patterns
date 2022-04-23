@@ -1,9 +1,8 @@
 package patterns.creational.fabricMethod;
 
-public class createJavaProgram extends createProgram{
-
+public class CreateCppProgram extends CreateProgram {
     @Override
     Developer getDeveloper() {
-        return new javaDeveloper();
+        return new CppDeveloper();
     }
 }
