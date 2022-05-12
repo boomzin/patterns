@@ -2,7 +2,6 @@ package patterns.structural.bridge;
 
 import patterns.structural.bridge.devices.Device;
 import patterns.structural.bridge.devices.VacuumCleaner;
-import patterns.structural.bridge.devices.Washer;
 import patterns.structural.bridge.interfaces.EngineerInterface;
 import patterns.structural.bridge.interfaces.UserInterface;
 
