@@ -7,10 +7,6 @@ public class Director {
         this.builder = builder;
     }
 
-    public VehicleBuilder getBuilder() {
-        return builder;
-    }
-
     public void constructCar() {
         builder.createVehicle();
         builder.setCapacity(5);
@@ -36,8 +32,7 @@ public class Director {
         builder.setName("hurricane");
         builder.setWheel(3);
         builder.setSpeedMax(5000);
-        Plane interceptor = ((PlaneBuilder)builder).getPlane();
-        interceptor.setWeapon("missile");
+        ((PlaneBuilder) builder).setWeapon("missile");
     }
 
 }
